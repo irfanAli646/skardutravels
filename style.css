@@ -40,6 +40,34 @@ header .container {
   font-weight: bold;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Adjust logo size for smaller screens */
+  }
+
+  header {
+    padding: 10px 0; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Very small screens (like phones in portrait mode) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem; /* Further adjust logo size */
+  }
+
+  header {
+    padding: 8px 0; /* Adjust padding further for small screens */
+  }
+}
+
+
 /* Mobile view adjustment */
 @media (max-width: 768px) {
   .logo {
